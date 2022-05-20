@@ -1,4 +1,4 @@
-const BASE_URL = "http://shibe.online/api/";
+const BASE_URL = "https://shibe.online/api/";
 const NUMBER_OF_IMAGES = 100;
 const userChoiceShibe = document.getElementById("shibe-btn");
 const userChoiceGato = document.getElementById("gato-btn");
