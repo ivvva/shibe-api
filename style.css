@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Cute+Font&display=swap");
+
+body {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  background-image: url(assets/tumblr_inline_mns6ogt0wA1qz4rgp540.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Cute Font", cursive;
+}
+
+#container-btn {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  margin: 0px;
+  position: fixed;
+}
+
+button {
+  width: 90px;
+  height: 35px;
+  padding: 5px;
+  margin: 5px;
+}
+
+#img-container {
+  max-width: 700px;
+  max-height: 700px;
+  display: grid;
+  overflow: auto;
+  grid-template-columns: auto auto auto;
+  padding-top: 70px;
+  margin: 0px;
+
+}
+
+#cute {
+  border-radius: 5px;
+}
+
+
+#shibe-btn,
+#gato-btn,
+#birb-btn {
+  height: 60px;
+  width: 120px;
+  font-family: "Cute Font", cursive;
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px,
+    5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-left: 75px;
+  margin-top: 30px;
+}
+
+#shibe-btn:active,
+#gato-btn:active,
+#birb-btn:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  #shibe-btn {
+    padding: 0.25em 0.75em;
+  }
+}
