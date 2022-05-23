@@ -1,25 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="assets/icons8-siba-inu-kawaii-48.ico">
+    <title>Shible - main</title>
+    <link rel="stylesheet" href="./style/reset.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="icon" href="./images/icons8-siba-inu-kawaii-48.ico">
     <link rel="stylesheet" href="https://unpkg.com/reasonable-colors@0.4.0/reasonable-colors.css">
-    <title>Document</title>
+    <script async src="./js/main.js"></script>
   </head>
   <body>
-    <div id="container">
-      <div class="container-btn">
-        <button type="button" value="shibe" id="shibe-btn">Shibe</button>
-        <button type="button" value="gato" id="gato-btn">El Gato</button>
-        <button type="button" value="birb" id="birb-btn">Birb</button>
-      </div>
-      <div id="img-container">
-        <img src="assets/shibe.jpeg" id="cute" height="700px" width="700px" draggable="false"/>
-      </div>
-    </div>
+    <main class="container">
+      <header class="head">
+        <ul class="controls">
+          <li class="controls__item">
+            <button class="controls__button js-button" type="button" data-type="shibe">Shibe</button>
+          </li>
+          <li class="controls__item">
+            <button class="controls__button js-button" type="button" data-type="gato" id="gato-btn">El Gato</button>
+          </li>
+          <li class="controls__item">
+            <button class="controls__button js-button" type="button" data-type="birb" id="birb-btn">Birb</button>
+          </li>
+        </ul>
+      </header>
+      <section class="content js-image-container">
+<!--        <img class="content__img" src="./images/shibe.jpeg" id="cute" height="700px" width="700px" draggable="false" alt=""/>-->
+      </section>
+    </main>
   </body>
-  <script src="main.js"></script>
 </html>

@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Cute+Font&display=swap");
+
+:root {
+    --content-width: 700px;
+}
+
+body {
+    background: #fff url("../images/tumblr_inline_mns6ogt0wA1qz4rgp540.gif") 0 0 no-repeat;
+    background-size: cover;
+    font-family: "Cute Font", cursive;
+    min-width: 390px;
+}
+
+.container {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 30px 0 80px;
+}
+
+.head {
+}
+
+/* .controls */
+.controls {
+    display: grid;
+    column-gap: 75px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media screen and (max-width: 700px) {
+    .controls {
+        column-gap: normal;
+    }
+}
+
+.controls__item {
+    text-align: center;
+}
+
+.controls__button {
+    margin: 5px;
+    padding: 0.25em 0.5em;
+    height: 60px;
+    width: 120px;
+    font-family: "Cute Font", cursive;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    cursor: pointer;
+    border: 3px solid;
+    box-shadow: 1px 1px 0 0,
+    2px 2px 0 0,
+    3px 3px 0 0,
+    4px 4px 0 0,
+    5px 5px 0 0;
+    -webkit-user-select: none;
+    user-select: none;
+    touch-action: manipulation;
+    transition: transform .3s linear, box-shadow .3s linear;
+}
+
+.controls__button:hover {
+    transform: translateX(-1px) translateY(-1px) rotate(-2deg);
+}
+
+.controls__button:active {
+    box-shadow: none;
+    transform: translateX(5px) translateY(5px);
+}
+
+/* .controls */
+
+
+/* .content */
+.content {
+    max-width: var(--content-width);
+    height: 700px;
+    margin: 70px 0 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.content__img {
+    max-width: 100%;
+    object-fit: cover;
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* .content */
+
